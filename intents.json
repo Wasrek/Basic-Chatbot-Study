@@ -1,0 +1,146 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hello",
+          "Hey",
+          "What's up?",
+          "Anyone there?"
+        ],
+        "responses": [
+          "Hello! Ready to learn some Vim commands?",
+          "Hey! Need help with Vim?",
+          "Hi there! I can help you master the basics of Vim!"
+        ]
+      },
+      {
+        "tag": "vim_intro",
+        "patterns": [
+          "What is Vim?",
+          "Can you tell me about Vim?",
+          "What is Vim used for?",
+          "Why should I learn Vim?"
+        ],
+        "responses": [
+          "Vim is a highly configurable text editor built for efficient text editing. It's popular among programmers for its speed and productivity.",
+          "Vim is a powerful text editor, often used in command-line interfaces, that allows you to edit text more efficiently once you master its commands.",
+          "Vim is great for coding, quick edits, and handling large text files. It's worth learning if you want to work more efficiently in the terminal!"
+        ]
+      },
+      {
+        "tag": "vim_modes",
+        "patterns": [
+          "What are the modes in Vim?",
+          "Tell me about Vim modes",
+          "How many modes does Vim have?",
+          "How do Vim modes work?"
+        ],
+        "responses": [
+          "Vim has several modes, but the most common ones are Normal, Insert, and Visual mode. Normal mode lets you navigate and edit, Insert mode is for typing, and Visual mode helps with selecting text.",
+          "The main Vim modes are: Normal (for navigating), Insert (for typing), Visual (for selecting), and Command (for commands like saving). Each mode is useful for different tasks.",
+          "There are four main Vim modes to know: Normal, Insert, Visual, and Command. You start in Normal mode, where you can move around and issue commands."
+        ]
+      },
+      {
+        "tag": "navigation_basics",
+        "patterns": [
+          "How do I navigate in Vim?",
+          "How do I move around in Vim?",
+          "What are the basic navigation commands in Vim?",
+          "Can you show me Vim navigation?"
+        ],
+        "responses": [
+          "In Vim, you can use 'h' to move left, 'j' to move down, 'k' to move up, and 'l' to move right. Try it out in Normal mode!",
+          "Use 'h', 'j', 'k', and 'l' for basic navigation. 'gg' takes you to the beginning of the file, and 'G' goes to the end.",
+          "To navigate, try 'h' (left), 'j' (down), 'k' (up), 'l' (right). You can also use 'gg' to jump to the top and 'G' for the bottom."
+        ]
+      },
+      {
+        "tag": "editing_basics",
+        "patterns": [
+          "How do I edit text in Vim?",
+          "What are the basic editing commands in Vim?",
+          "How can I edit in Vim?",
+          "How do I insert text in Vim?"
+        ],
+        "responses": [
+          "To start editing, press 'i' to enter Insert mode. Press 'Esc' to return to Normal mode when you're done.",
+          "Use 'i' to insert before the cursor and 'a' to append after the cursor. When done, press 'Esc' to return to Normal mode.",
+          "In Vim, press 'i' to go into Insert mode and start typing. Use 'a' to insert after the cursor or 'o' to start a new line."
+        ]
+      },
+      {
+        "tag": "saving_and_quitting",
+        "patterns": [
+          "How do I save in Vim?",
+          "How do I quit Vim?",
+          "How can I save and exit Vim?",
+          "What are the commands to save and quit Vim?"
+        ],
+        "responses": [
+          "To save, use ':w'. To quit, use ':q'. To save and quit at once, use ':wq'. If you want to quit without saving, use ':q!'",
+          "Type ':w' to save, ':q' to quit, and ':wq' to save and quit. If you made changes you don't want to save, use ':q!'",
+          "Saving is ':w', quitting is ':q', and both together is ':wq'. If you're stuck and want to quit without saving, use ':q!'"
+        ]
+      },
+      {
+        "tag": "search_replace",
+        "patterns": [
+          "How do I search in Vim?",
+          "How can I find and replace text in Vim?",
+          "What are the search commands in Vim?",
+          "How to do search and replace in Vim?"
+        ],
+        "responses": [
+          "Use '/' followed by your search term to search forward. Use 'n' to jump to the next match.",
+          "For search and replace, use :%s/old/new/g to replace all instances of 'old' with 'new' in the file.",
+          "To search, use '/word' to find 'word' forward. Use ':%s/old/new/g' for replacing all instances of 'old' with 'new'."
+        ]
+      },
+      {
+        "tag": "delete_text",
+        "patterns": [
+          "How do I delete text in Vim?",
+          "What are the delete commands in Vim?",
+          "How can I delete a line in Vim?",
+          "How do I remove text in Vim?"
+        ],
+        "responses": [
+          "To delete a character, use 'x'. To delete a word, use 'dw'. To delete a line, use 'dd'.",
+          "Try 'x' to delete a character, 'dw' to delete a word, and 'dd' to delete an entire line.",
+          "In Normal mode, 'x' deletes a character, 'dw' deletes a word, and 'dd' deletes the current line. Give it a try!"
+        ]
+      },
+      {
+        "tag": "undo_redo",
+        "patterns": [
+          "How do I undo in Vim?",
+          "Can I redo in Vim?",
+          "What is the undo command in Vim?",
+          "How can I redo in Vim?"
+        ],
+        "responses": [
+          "Use 'u' to undo and 'Ctrl + r' to redo.",
+          "To undo your last action, press 'u'. If you want to redo, press 'Ctrl + r'.",
+          "Press 'u' to undo and 'Ctrl + r' to redo. These are very helpful commands!"
+        ]
+      },
+      {
+        "tag": "advanced_navigation",
+        "patterns": [
+          "How do I jump to the start of a line in Vim?",
+          "How do I move to the end of a line in Vim?",
+          "What are the advanced navigation commands in Vim?",
+          "How can I quickly navigate in Vim?"
+        ],
+        "responses": [
+          "Use '0' to go to the start of a line, '$' to go to the end, 'gg' to jump to the top, and 'G' to go to the bottom of the file.",
+          "Press '0' to jump to the beginning of a line, '$' to go to the end, 'gg' for the top of the file, and 'G' for the end.",
+          "For quick navigation, try '0' (start of line), '$' (end of line), 'gg' (top of file), and 'G' (bottom of file)."
+        ]
+      }
+    ]
+  }
+  
